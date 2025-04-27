@@ -78,8 +78,11 @@ function DaysCounter() {
         </p>
       </div>
 
-      <p className="text-3xl lg:text-2xl font-bold mt-10 uppercase mogra select-none">
+      {/* <p className="text-3xl lg:text-2xl font-bold mt-10 uppercase mogra select-none">
         and still counting...
+      </p> */}
+      <p className="text-3xl lg:text-2xl font-bold mt-10 uppercase mogra select-none">
+       Happy 1Year and 1 Month Anniversary! 🎉🎉
       </p>
     </>
   );
