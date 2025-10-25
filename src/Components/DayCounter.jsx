@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Spotlight } from "./SpotLight";
-import { TextGenerateEffect } from "./TextGenerateEffect";
+import { SpotLight } from "./SpotLight";
+
 
 function DaysCounter() {
   const startDate = new Date("2024-03-28T00:00:00"); // Your start date
@@ -50,7 +50,7 @@ function DaysCounter() {
 
   return (
     <>
-     <Spotlight
+     <SpotLight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />

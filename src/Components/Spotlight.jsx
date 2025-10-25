@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "../../lib/utils";
 
 
-export const Spotlight = ({ className, fill }) => {
+export const SpotLight = ({ className, fill }) => {
   return (
     <svg
       className={cn(
