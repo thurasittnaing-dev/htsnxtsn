@@ -162,7 +162,9 @@ const About = () => {
                             <Avater name="Thura Sitt Naing" nickname='KoKo"' image={koko} />
                         </div>
 
-                         <TextGenerateEffect words={words} />
+                        <div className="hidden md:block">
+                           <TextGenerateEffect   words={words} />
+                        </div>
                     </div>
                 </div>
 
