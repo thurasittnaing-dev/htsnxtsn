@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { SpotLight } from "./SpotLight";
+import { Spotlight  } from "./Spotlight ";
 
 
 
@@ -51,7 +51,7 @@ function DaysCounter() {
 
   return (
     <>
-     <SpotLight
+     <Spotlight 
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
