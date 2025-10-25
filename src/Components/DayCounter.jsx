@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Spotlight } from "./SpotLight";
+import { TextGenerateEffect } from "./TextGenerateEffect";
 
 function DaysCounter() {
   const startDate = new Date("2024-03-28T00:00:00"); // Your start date
@@ -48,12 +50,16 @@ function DaysCounter() {
 
   return (
     <>
-      <p className="text-2xl lg:text-4xl font-bold mb-4 uppercase mogra select-none">
+     <Spotlight
+        className="-top-40 left-0 md:-top-20 md:left-60"
+        fill="white"
+      />
+      <p className="text-2xl lg:text-4xl font-bold mb-4 uppercase mogra select-none text-[#fff]">
         We've been together for
       </p>
 
       <div>
-        <p className="text-lg lg:text-2xl font-semibold mogra select-none text-[#DE3163]">
+        <p className="text-lg lg:text-2xl font-semibold mogra select-none text-[#A684FF]">
           <span className="mr-2">
             <span className="mr-1">{timeElapsed.years}</span>YEAR{timeElapsed.years !== 1 && "S"},
           </span>
@@ -65,7 +71,7 @@ function DaysCounter() {
           </span>
         </p>
 
-        <p className="text-lg lg:text-2xl font-semibold mogra select-none text-[#DE3163] mt-2">
+        <p className="text-lg lg:text-2xl font-semibold mogra select-none text-[#A684FF] mt-2">
           <span className="mr-2">
             <span className="mr-1">{timeElapsed.hours}</span>HOUR{timeElapsed.hours !== 1 && "S"},
           </span>
@@ -77,7 +83,7 @@ function DaysCounter() {
           </span>
         </p>
       </div>
-
+     
       {/* <p className="text-3xl lg:text-2xl font-bold mt-10 uppercase mogra select-none">
         and still counting...
       </p> */}

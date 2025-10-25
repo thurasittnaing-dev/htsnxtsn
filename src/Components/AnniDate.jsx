@@ -8,7 +8,7 @@ const AnniDate = ({ text = "Since 28/March/2024" }) => {
       {textArray.map((item, index) => (
         <motion.span
           key={index}
-          className="mogra text-lg text-black"
+          className="mogra text-lg text-white"
           initial={{
             y: 0,
           }}

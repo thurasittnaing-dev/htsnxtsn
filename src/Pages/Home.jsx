@@ -6,6 +6,16 @@ import Hearts from "../Components/Hearts";
 import Avater from "../Components/Avater";
 import AnniDate from "../Components/AnniDate";
 import DaysCounter from "../Components/DayCounter";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconNewSection,
+  IconTerminal2,
+} from "@tabler/icons-react";
+import { TextGenerateEffect } from "../Components/TextGenerateEffect";
+
 
 const About = () => {
 
@@ -77,27 +87,89 @@ const About = () => {
         };
     }, []);
 
+
+     const links = [
+    {
+      title: "Home",
+      icon: (
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+ 
+    {
+      title: "Products",
+      icon: (
+        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+    {
+      title: "Components",
+      icon: (
+        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+    {
+      title: "Aceternity UI",
+      icon: (
+        <img
+          src="https://assets.aceternity.com/logo-dark.png"
+          width={20}
+          height={20}
+          alt="Aceternity Logo"
+        />
+      ),
+      href: "#",
+    },
+    {
+      title: "Changelog",
+      icon: (
+        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+ 
+    {
+      title: "Twitter",
+      icon: (
+        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+    {
+      title: "GitHub",
+      icon: (
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "#",
+    },
+  ];
+
+    const words = `❤️ Every love story is beautiful, but ours feels like home.`;
     return (
         <>
            <Hearts />
-           <div className="flex flex-col md:flex-row justify-center items-center md:h-screen">
+            <div className="flex flex-col md:flex-row justify-center items-center md:h-screen">
                 <div className="w-full md:w-1/2 mt-10 md:mt-0">
                     <div id="animation-container" className="relative flex flex-col justify-center items-center">
-                        <div id="text-container" className="text-6xl lg:text-9xl font-bold mogra select-none text-[#DE3163]"></div>
+                        <div id="text-container" className="text-6xl lg:text-9xl font-bold mogra select-none text-[#A684FF]"></div>
                         <div id="cursor"></div>
                         <AnniDate />
                         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4 mt-8 mb-10 md:mb-0">
                             <Avater name="Hsu Thitsar Naing" nickname='Thel"' image={thelthel} />
                             <Avater name="Thura Sitt Naing" nickname='KoKo"' image={koko} />
                         </div>
+
+                         <TextGenerateEffect words={words} />
                     </div>
                 </div>
 
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 text-center mt-2 md:mt-0">
-                  <DaysCounter />
+                <DaysCounter />
                 </div>
             </div>
-
         </>
     );
 };
