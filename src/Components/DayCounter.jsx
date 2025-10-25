@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { SpotLight } from "./SpotLight";
+
 
 
 function DaysCounter() {
