@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Spotlight  } from "./Spotlight ";
+import { Spotlight  } from "./Spotlight.jsx";
 
 
 
