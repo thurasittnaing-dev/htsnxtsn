@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Spotlight  } from "./Spotlight.jsx";
-
+import { SparklesCore } from './Sparkles';
+import SparklesBackground from "./SparklesBackground.jsx";
 
 
 function DaysCounter() {
@@ -84,13 +85,8 @@ function DaysCounter() {
           </span>
         </p>
       </div>
-     
-      {/* <p className="text-3xl lg:text-2xl font-bold mt-10 uppercase mogra select-none">
-        and still counting...
-      </p> */}
-      {/* <p className="text-3xl lg:text-2xl font-bold mt-10 uppercase mogra select-none">
-       Happy 1Year and 1 Month Anniversary! 🎉🎉
-      </p> */}
+
+      <SparklesBackground />
     </>
   );
 }

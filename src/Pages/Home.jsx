@@ -15,9 +15,14 @@ import {
   IconTerminal2,
 } from "@tabler/icons-react";
 import { TextGenerateEffect } from "../Components/TextGenerateEffect";
+import AnniText from "../Components/AnniText";
 
 
 const About = () => {
+
+   // Get today's date
+    const today = new Date();
+    const isAnniversary = today.getDate() === 28; 
 
     useEffect(() => {
         const text = "HTSNXTSN";
@@ -162,14 +167,14 @@ const About = () => {
                             <Avater name="Thura Sitt Naing" nickname='KoKo"' image={koko} />
                         </div>
 
-                        <div className="hidden md:block">
-                           <TextGenerateEffect   words={words} />
+                        <div className="md:block">
+                           <TextGenerateEffect words={words} />
                         </div>
                     </div>
                 </div>
 
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 text-center mt-2 md:mt-0">
-                <DaysCounter />
+                     {isAnniversary ? <AnniText /> : <DaysCounter />}
                 </div>
             </div>
         </>
