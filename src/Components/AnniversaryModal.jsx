@@ -73,7 +73,7 @@ const AnniversaryModal = ({ open, onClose }) => {
 
                 <button
                     onClick={onClose}
-                    className="mt-6 px-8 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 hover:scale-105 transition"
+                    className="hidden md:inline-block mt-6 px-8 py-2 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 hover:scale-105 transition"
                 >
                     Close
                 </button>
