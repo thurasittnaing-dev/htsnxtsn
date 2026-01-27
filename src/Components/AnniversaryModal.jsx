@@ -42,7 +42,7 @@ const AnniversaryModal = ({ open, onClose }) => {
                     ✕
                 </button>
 
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
+                <h2 className="text-xl md:text-2xl font-bold text-white mb-2 tracking-wide">
                     🖤 Happy Anniversary 🖤
                 </h2>
 
@@ -50,10 +50,10 @@ const AnniversaryModal = ({ open, onClose }) => {
                 <img
                     src="/tenor.gif"
                     alt="Anniversary"
-                    className="mx-auto w-30 md:w-30 rounded-xl shadow-lg mb-4"
+                    className="mx-auto w-25 md:w-25 rounded-xl shadow-lg mb-4"
                 />
 
-                <p className="text-white/70 text-md leading-relaxed">
+                <p className="text-white/70 text-sm leading-relaxed">
                     ကိုကိုတို့တွေ 1 Year 10 months ပြည့်ပြီသဲသဲရေ 
                     Happy လို့တောင် မသုံးရဲတော့ဘူး ဘာတွေများပျော်နေရလို့လဲဆိုပြီး 
                     ပြန်ပြောတော့မယ့် သဲသဲ စကားကို ကိုကို ကြိုကြားနေလို့ 
