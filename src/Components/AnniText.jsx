@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Spotlight } from './Spotlight'
 import { SparklesCore } from './Sparkles';
+import AnniversaryModal from './AnniversaryModal'
 
 function AnniText() {
 
     const anniversaryDate = new Date(2024, 2, 28); 
     const today = new Date();
+    const [open, setOpen] = useState(false)
 
     // Calculate difference in months and years
     const totalMonths =
@@ -25,6 +27,13 @@ function AnniText() {
             <h1 className="md:text-2xl text-xl lg:text-5xl font-bold text-center text-[#fff] relative z-20 mogra">
                 <div>HAPPY {years > 0 && `${years} Year${years > 1 ? "s" : ""}`} {months > 0 && `& ${months} Month${months > 1 ? "s" : ""}`}</div> 
                 <div>Anniversary</div>
+                <button
+                    type="button"
+                    onClick={() => setOpen(true)}
+                    className="cursor-pointer mt-3 text-3xl hover:scale-110 transition"
+                >
+                    🎁
+                </button>
             </h1>
             <div className="w-[40rem] h-40 relative">
                 {/* Gradients */}
@@ -46,6 +55,8 @@ function AnniText() {
                 {/* Radial Gradient to prevent sharp edges */}
                 <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
+
+            <AnniversaryModal open={open} onClose={() => setOpen(false)} />
         </>
   )
 }
