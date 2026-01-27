@@ -22,8 +22,8 @@ const About = () => {
 
    // Get today's date
     const today = new Date();
-    // const isAnniversary = today.getDate() === 28; 
-    const isAnniversary = true; 
+    const isAnniversary = today.getDate() === 28; 
+    // const isAnniversary = true; 
 
     useEffect(() => {
         const text = "HTSNXTSN";
