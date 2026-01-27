@@ -160,7 +160,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row justify-center items-center md:h-screen">
                 <div className="w-full md:w-1/2 mt-10 md:mt-0">
                     <div id="animation-container" className="relative flex flex-col justify-center items-center">
-                        <div id="text-container" className="text-6xl lg:text-9xl font-bold mogra select-none text-[#A684FF]"></div>
+                        <div id="text-container" className="text-5xl lg:text-8xl font-bold mogra select-none text-[#A684FF]"></div>
                         <div id="cursor"></div>
                         <AnniDate />
                         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4 mt-8 mb-10 md:mb-0">

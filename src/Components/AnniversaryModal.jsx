@@ -47,14 +47,11 @@ const AnniversaryModal = ({ open, onClose }) => {
                 </h2>
 
                 {/* GIF */}
-                <div className="flex items-center justify-center bm-3">
-                    <div className='w-28'>
-                        <div className="tenor-gif-embed" data-postid="13936295620129463587" data-share-method="host" data-aspect-ratio="1.05063" data-width="100%">
-                            <a href="https://tenor.com/view/angry-bubu-gif-13936295620129463587">Angry Bubu GIF</a>from <a href="https://tenor.com/search/angry-gifs">Angry GIFs</a>
-                        </div> 
-                        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-                    </div>
-                </div>
+                <img
+                    src="/tenor.gif"
+                    alt="Anniversary"
+                    className="mx-auto w-30 md:w-30 rounded-xl shadow-lg mb-4"
+                />
 
                 <p className="text-white/70 text-md leading-relaxed">
                     ကိုကိုတို့တွေ 1 Year 10 months ပြည့်ပြီသဲသဲရေ 
