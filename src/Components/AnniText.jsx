@@ -17,6 +17,11 @@ function AnniText() {
     const years = Math.floor(totalMonths / 12);
     const months = totalMonths % 12;
 
+    const anniDate = [
+        years > 0 ? `${years} Year${years > 1 ? "s" : ""}` : "",
+        months > 0 ? `${months} Month${months > 1 ? "s" : ""}` : ""
+        ].filter(Boolean).join(" & ");
+
     return (
         <>
             <Spotlight 
@@ -25,7 +30,7 @@ function AnniText() {
             />
         
             <h1 className="md:text-2xl text-xl lg:text-5xl font-bold text-center text-[#fff] relative z-20 mogra">
-                <div>HAPPY {years > 0 && `${years} Year${years > 1 ? "s" : ""}`} {months > 0 && `& ${months} Month${months > 1 ? "s" : ""}`}</div> 
+                <div>HAPPY {anniDate}</div> 
                 <div>Anniversary</div>
                 <button
                     type="button"
@@ -56,7 +61,7 @@ function AnniText() {
                 <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
             </div>
 
-            <AnniversaryModal open={open} onClose={() => setOpen(false)} />
+            <AnniversaryModal open={open} anniDate={anniDate} onClose={() => setOpen(false)} />
         </>
   )
 }
