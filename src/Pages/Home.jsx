@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./../texteffect.css"; 
+import "./../texteffect.css";
 import thelthel from "./../assets/thelthel.jpg";
 import koko from "./../assets/koko.jpg";
 import Hearts from "../Components/Hearts";
@@ -22,8 +22,8 @@ const About = () => {
 
    // Get today's date
     const today = new Date();
-    const isAnniversary = today.getDate() === 28; 
-    // const isAnniversary = true; 
+    // const isAnniversary = today.getDate() === 28;
+    const isAnniversary = true;
 
     useEffect(() => {
         const text = "HTSNXTSN";
@@ -102,7 +102,7 @@ const About = () => {
       ),
       href: "#",
     },
- 
+
     {
       title: "Products",
       icon: (
@@ -136,7 +136,7 @@ const About = () => {
       ),
       href: "#",
     },
- 
+
     {
       title: "Twitter",
       icon: (
