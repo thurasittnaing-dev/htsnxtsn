@@ -22,8 +22,8 @@ const About = () => {
 
    // Get today's date
     const today = new Date();
-    // const isAnniversary = today.getDate() === 28;
-    const isAnniversary = true;
+    const isAnniversary = today.getDate() === 28;
+    // const isAnniversary = true;
 
     useEffect(() => {
         const text = "HTSNXTSN";
@@ -175,7 +175,7 @@ const About = () => {
                 </div>
 
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 text-center mt-2 md:mt-0">
-                     {isAnniversary ? <AnniText /> : <DaysCounter />}
+                     {/* {isAnniversary ? <AnniText /> : <DaysCounter />} */}
                 </div>
             </div>
         </>
